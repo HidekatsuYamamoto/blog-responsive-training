@@ -42,10 +42,10 @@ body {
 
 @media screen and (min-width: 1080px) {
   .header {
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     /* justify-content: center; */
-    align-items: center;
+    /* align-items: center; */
   }
 }
 
@@ -96,6 +96,13 @@ body {
   display: flex;
   overflow: scroll;
   scrollbar-width: none;
+}
+
+@media screen and (min-width: 580px) {
+  /* 中間幅のナビアイテムのレイアウト崩れ防止のため */
+  .header-nav_list {
+    justify-content: center;
+  }
 }
 
 .header-nav_list::-webkit-scrollbar {
@@ -552,6 +559,12 @@ body {
   padding: 16px 24px;
 }
 
+@media screen and (min-width: 1080px) {
+  .single_sidebar-box_head-txt {
+    padding: 16px 10px 16px 24px;
+  }
+}
+
 .single_sidebar-box_contents {
   margin-top: 16px;
 }
@@ -567,12 +580,6 @@ body {
   align-items: center;
   padding: 16px 24px;
   position: relative;
-}
-
-@media screen and (min-width: 1080px) {
-  .single_sidebar-cat_item {
-    padding: 16px 10px 16px 24px;
-  }
 }
 
 .single_sidebar-cat_link::before {
